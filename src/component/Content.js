@@ -12,6 +12,7 @@ import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 
 const styles = theme => ({
   root: {
+    margin:'auto',
     maxWidth: 400,
     flexGrow: 1,
   },
@@ -24,7 +25,7 @@ const styles = theme => ({
     backgroundColor: theme.palette.background.default,
   },
   img: {
-    height: 255,
+    height: 500,
     maxWidth: 400,
     overflow: 'hidden',
     width: '100%',
@@ -81,9 +82,9 @@ class TextMobileStepper extends React.Component {
     }
 
      return (
-      <div className={classes.root} style={{margin: 'auto'}}>
+      <div className={classes.root}>
         <Paper square elevation={0} className={classes.header}>
-          <Typography>{tutorialSteps[activeStep].label}</Typography>
+          <Typography><h3>{tutorialSteps[activeStep].label}</h3></Typography>
         </Paper>
         <img
           className={classes.img}
